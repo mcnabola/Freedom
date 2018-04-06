@@ -11,7 +11,20 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Freedom" startnode="1" creator="Twine" creator-version="2.2.1" ifid="2F88573E-DFDA-46AC-B92B-33792B7CCCB1" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start of Story" tags="" position="540,243" size="100,100">children taken</tw-passagedata></tw-storydata>
+<tw-storydata name="Freedom" startnode="1" creator="Twine" creator-version="2.2.1" ifid="C484083C-76DF-4398-B673-E9FC22A40069" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="beginning" tags="" position="141,312" size="100,100">We begin our journey in a small town in Missouri
+[[next]]</tw-passagedata><tw-passagedata pid="2" name="next" tags="" position="283,313" size="100,100">Inside a small wooden cabin lay a man and his family.
+Suddenly hey hear a loud knock on the door.
+
+[[open the door|bb]]
+[[ignore|hh]]</tw-passagedata><tw-passagedata pid="3" name="hh" tags="" position="404,205" size="100,100">Ignoring the knock on the door you turn your wife and children.
+You tell them to hide.
+
+
+
+(set: $Counter to 5)
+(live: 1s)[
+(set: $Counter to it -1)
+(if: $Counter is 0)</tw-passagedata><tw-passagedata pid="4" name="bb" tags="" position="400,418" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="5" name="pp" tags="" position="603,204" size="100,100">a</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
