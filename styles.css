@@ -31,4 +31,12 @@ tw-passagedata {
 }
 
 
-<span style="background-color:red;">text of a sort -- add a <p> in side this ?? </span>
+/*code for styling individual pieces inside the passages*/
+<span style="background-color:red;">Only the text in here will be red</span> this text will be black as normal
+
+
+
+
+
+
+
