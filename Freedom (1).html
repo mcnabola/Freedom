@@ -17,7 +17,9 @@
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -30,9 +32,15 @@ Inside a small wooden cabin lay a man and his family.
 Suddenly they hear a loud knock on the door.
 
 [[open the door|bb]]
-[[ignore|hh]]</tw-passagedata><tw-passagedata pid="3" name="hh" tags="" position="344,268" size="100,100">(align: &quot;====&gt;&lt;=&quot;)[Health:(print: $health)]
+[[ignore|hh]]</tw-passagedata><tw-passagedata pid="3" name="hh" tags="" position="344,269" size="100,100">(align: &quot;====&gt;&lt;=&quot;)[Health:(print: $health)]
 Ignoring the knock on the door you turn your wife and children.
-You tell them to hide.[[next|p]]</tw-passagedata><tw-passagedata pid="4" name="bb" tags="" position="352,600" size="100,100">(align: &quot;====&gt;&lt;=&quot;)[Health:(print: $health)]
+You tell them to hide.
+
+{(live: 3s)[
+(set: $timeLeft to $timeLeft - 1) (replace: ?countdown)
+(if: $timeLeft &lt;= 0)[(goto: &quot;p&quot;)]
+]
+}</tw-passagedata><tw-passagedata pid="4" name="bb" tags="" position="354,600" size="100,100">(align: &quot;====&gt;&lt;=&quot;)[Health:(print: $health)]
 You open the door and are met with the butt of a gun to the face. You do not have time to see anything or react.....[[next|a]]</tw-passagedata><tw-passagedata pid="5" name="a" tags="" position="558,551" size="100,100">(align: &quot;====&gt;&lt;=&quot;)[Health:(print: $health)]
 &quot;What where am I?&quot; You&#39;re in a dark room that appears to be a basement. [[Look around the room|look]]
 [[Call for help|help]]</tw-passagedata><tw-passagedata pid="6" name="p" tags="" position="544,298" size="100,100">(set: $health-=10)
