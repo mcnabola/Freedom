@@ -77,7 +77,9 @@ background-color:#000;
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -125,15 +127,15 @@ You open the door and are met with the butt of a gun to the face. You do not hav
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 &quot;What where am I?&quot; You&#39;re in a dark room that appears to be a basement. [[Look around the room|looksf]]
 [[Call for help|helps]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="p" tags="" position="464,448" size="100,100">(set: $health-=10)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="p" tags="" position="467,448" size="100,100">(set: $health-=10)
 &lt;div class =&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 Suddenly two armed men in black break down the door and hit you, knocking you to the floor. You see them hear your family hiding and heading towards them. As you try to get up and fight they knock you out.....
-{(live: 6s)[
+{(live: 7s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;a&quot;)]
 ]&lt;/div&gt;
-}</tw-passagedata><tw-passagedata pid="7" name="looksf" tags="" position="704,413" size="100,100">&lt;div class =&quot;textBox&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="7" name="looksf" tags="" position="704,414" size="100,100">&lt;div class =&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 You are chained to the wall.You hear a voice.&quot;It&#39;s no good son...how&#39;d they get you?&quot; 
 &lt;/div&gt;
@@ -141,7 +143,7 @@ You are chained to the wall.You hear a voice.&quot;It&#39;s no good son...how&#3
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;r2&quot;)]
 ]
-}</tw-passagedata><tw-passagedata pid="8" name="helps" tags="" position="756,634" size="100,100">&lt;div class =&quot;textBox&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="8" name="helps" tags="" position="721,654" size="100,100">&lt;div class =&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 &quot;Don&#39;t bother kid...we&#39;ve been here for 3 months now&quot; You see other people in chains accross the room from you. You hear a door opening 
 &lt;/div&gt;
@@ -149,7 +151,7 @@ You are chained to the wall.You hear a voice.&quot;It&#39;s no good son...how&#3
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;r2&quot;)]
 ]
-}</tw-passagedata><tw-passagedata pid="9" name="r2" tags="" position="850,510" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="9" name="r2" tags="" position="849,510" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 A bright light fills the room from above as the cellar opens.  A man in a white suit and hat slowly walks down the stairs.&quot;Who are you? where are my family?&quot;
 &lt;/div&gt;
@@ -183,7 +185,7 @@ Well Jackson I feel as if you&#39;re gonna behave yourself given what you have i
 Jackson is woken up by another slave beside him. A worker comes into the basement.&quot;Wake Up it&#39;s time for breakfast&quot;.
 He throws each slave a wooden bowl with porridge.Each slave begins eating it with their hands. Jackson does the same. They are then unlocked from the wall and told to follow the man. One man leads the group and another follows behind.
 They are both armed&lt;/div&gt;
-{(live: 10s)[
+{(live: 12s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;g&quot;)]
 ]
@@ -200,19 +202,19 @@ You begin work&lt;/div&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 You are working and you notice no one is talking. Everyone is working very fast.
 Beside you is a man of about 60 years of age.He looks rather friendly
-[[Talk to him|whip]]
-[[Keep to yourself|as]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="whip" tags="" position="1956,603" size="100,100">(set: $health-=20)
+[[Talk to him|whips]]
+[[Keep to yourself|as4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="whips" tags="" position="1944,598" size="100,100">(set: $health-=20)
 &lt;div class =&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 Jim:&quot;How long have you been here?&quot;
 You are met with a whip to the back
 Guard:&quot;Get back to work,no talking&quot;&lt;/div&gt;
-{(live: 4s)[
+{(live: 8s)[
 (set: $timeLeft to $timeLeft - 1) 
-(if: $timeLeft &lt;= 0)[(goto:&quot;as&quot;)]
+(if: $timeLeft &lt;= 0)[(goto:&quot;as4&quot;)]
 ]
 }
-</tw-passagedata><tw-passagedata pid="18" name="as" tags="" position="1941,392" size="100,100">&lt;div class =&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="18" name="as4" tags="" position="1938,398" size="100,100">&lt;div class =&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 After a awhile the guards walk away to another part of the field.
 The man begins the talk &quot;Stay strong,the first few weeks are always the hardest, wait for the guards to get a bit of distance before you talk&quot;
@@ -254,12 +256,12 @@ What was your job before they caught you?&quot;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 &quot;They&#39;re both dim guys, they&#39;ve tried escaping before and usually they would have been shot on the spot but Mr.Stewart has taken a liking to them. Them brothers are the best workers on the farm and they used to run a brewery so he keeps them around to make his own ale.  They&#39;ve been trying for years so I&#39;ve given up on them at this stage.  By the way I&#39;m Jim&quot;
 &lt;/div&gt;
-{(live: 10s)[
+{(live: 12s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;gh&quot;)]
 ]
 }
-</tw-passagedata><tw-passagedata pid="23" name="gh" tags="" position="2853,463" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="23" name="gh" tags="" position="2838,468" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 It&#39;s dinnertime and you sit at a bench beside Jim in the basement.
 [[Look around(You may find potential tools or escape routes)|lookse]]
@@ -270,7 +272,7 @@ Jeremiah:&quot;What&#39;s it to you ?&quot;
 Jackson:&quot;I hear you boys got a plan&quot;
 Sam:&quot;Keep it down they&#39;ll hear you&quot;
 &lt;/div&gt;
-{(live: 9s)[
+{(live: 10s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;of&quot;)]
 ]
@@ -281,11 +283,11 @@ Sam:&quot;Keep it down they&#39;ll hear you&quot;
 You can see there are a few windows in the basement, one of which has only two bars on it. One is positioned to the very left of the window, the other is in the middle but looks weak.
 You can hear guards approaching and getting suspicious.You can [[Inspect it further|ii]] or [[sit back down|opg]]
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="26" name="ii" tags="" position="3255,428" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="26" name="ii" tags="" position="3232,413" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;span&gt;
 &quot;What are you doing, sit down now&quot;
 [[next|opg]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="opg" tags="" position="3304,623" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="opg" tags="" position="3296,590" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 You sit back down.
 Jim:&quot;You got lucky,they&#39;ll punish you if they suspect anything&quot;
@@ -300,16 +302,16 @@ Jackson:&quot;That bars loose&quot;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 Jim:&quot;Ya a few months back a horse and cart reversed into the wall from upstairs and it did some damage...I know what you&#39;re thinking boy. Even if you got out, you got your family in the main house and you got atleast two guards around the house 24/7&quot;
 &lt;/div&gt;
-{(live: 8s)[
+{(live: 10s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;ask&quot;)]
 ]
 }
-</tw-passagedata><tw-passagedata pid="29" name="ask" tags="" position="3667,613" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="29" name="ask" tags="" position="3638,612" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 Jim:&quot;Pfft it&#39;s no use telling you is it..every saturday the guards pick a handful of the field workers to resharpen the tools for the week&quot;
 &lt;/div&gt;
-{(live: 7s)[
+{(live: 8s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;plaa&quot;)]
 ]
@@ -320,7 +322,7 @@ Jackson:&quot;Perfect thanks Jim, say you got family on the outside?&quot;
 Jim:&quot;No I was never married and have been here for 10 years now, I guess this is my home now&quot;
 Guards:&quot;Alright times up,lets go you guys&quot;
 &lt;/div&gt;
-{(live: 8s)[
+{(live: 9s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;time&quot;)]
 ]
@@ -341,16 +343,16 @@ After a few weeks,the guards go about picking the normal few for the resharpenin
 (set: $chisel=true)
 You&#39;re brought to a small open shed with 3 other workers and are told to begin.You watch as each worker goes to a station and resharpens the tools. You go about the work and can see a chisel on your desk.
 &lt;/div&gt;
-{(live: 8s)[
+{(live: 10s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;hy&quot;)]
 ]
 }
-</tw-passagedata><tw-passagedata pid="33" name="hy" tags="" position="4255,628" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="33" name="hy" tags="" position="4218,608" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 That night you begin chiseling the chain on the wall. Each night you get closer and closer to freedom. Eventually you do and you aim your sights on the window above you. You have to operate very slowly so you don&#39;t alert anyone.
 &lt;/div&gt;
-{(live: 4s)[
+{(live: 10s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;familys&quot;)]
 ]
@@ -364,12 +366,12 @@ Or [[Go it alone|plan Bb]]
 The next day you begin your plan to locate your son Alex and wife Maria.You ask Jim what he knows about how to get access to them.
 Jim:&quot;Well it&#39;s not easy,but you got your monthly meeting with them in the next few days so your wife might have some info&quot;
 &lt;/div&gt;
-{(live: 7s)[
+{(live: 9s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;meetings&quot;)]
 ]
 }
-</tw-passagedata><tw-passagedata pid="36" name="plan Bb" tags="" position="4535,822" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="36" name="plan Bb" tags="" position="4536,822" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 &lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
 That night you are having second thoughts
 You know you have a good chance of escaping if you go it alone but what&#39;s life without family.
@@ -399,7 +401,7 @@ Jackson:&quot;Is there time that ye have together by yourselves?&quot;
 Maria:&quot;Ya, every Wednesday night we get an hour or two in this room together,but a guard stands outside the door. Why what are you thinking Jackson&quot;
 [[&quot;I&#39;m gonna break into the house Wednesday night and we&#39;ll escape.I can get out of the basement|planBads]]
 [[If I give you this chisel will you be able to get out the window and meet me at the base of the house|planGoods]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="planBads" tags="" position="5045,411" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="planBads" tags="" position="4998,400" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 Maria:&quot;How?&quot;
 Jackson:&quot;I&#39;ve chiselled my chain off the wall and broken the bars on my window in the basement.I can break out Wednesday and find a way into the house and we&#39;ll escape&quot;
 Maria:&quot;Are you sure thats the best plan,how are you gonna get us out?&quot;
@@ -408,24 +410,24 @@ Maria:&quot;Are you sure thats the best plan,how are you gonna get us out?&quot;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="planGoods" tags="" position="5222,652" size="100,100">Maria:&quot;Ya, we&#39;ll get out the window and climb down to the ground and we&#39;ll all go together!&quot;
 Mr.stewart walks in and says &quot;Time&#39;s up&quot;.
 As you hug Alex you slip the chisel from up your sleeve into the back of his shirt
-{(live: 4s)[
+{(live: 8s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;ef&quot;)]
 ]
 }
-</tw-passagedata><tw-passagedata pid="43" name="continues" tags="" position="5297,494" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="43" name="continues" tags="" position="5287,505" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 The wednesday arrives and you carry out your plan.You manage to get out of the basement with ease and arrive outside the house.
 There&#39;s an unguarded side entrance do you [[sneak in there|sneaks]] or [[wait|waits]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="ef" tags="" position="5321,790" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 Wednesday night arrives and you set the plan in motion.You escape from the basement easily and make your way towards the house. You sneak around the house and make it to under the window your family are. 
 You wait a while and you hear the window open. Alex and Maria climb down onto a smaller roof and you help them get down. 
 &lt;/div&gt;
-{(live: 4s)[
+{(live:11s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;happy&quot;)]
 ]
 }
-</tw-passagedata><tw-passagedata pid="45" name="sneaks" tags="" position="5479,517" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="45" name="sneaks" tags="" position="5451,566" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 As you open the door you realise you are in the back entrance of the kitchen,you can see that Mr and Mrs.Stewart are in the dining room being served their dinner.You can see the stairs but it&#39;s risky.
 Do you [[run towards the stairs|deathss]] or [[wait for an oppurtunity|waitas]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="waits" tags="" position="5423,369" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
@@ -436,12 +438,12 @@ While waiting you are getting more and more aware of this risky plan. You decide
 (if: $timeLeft &lt;= 0)[(goto:&quot;sneak&quot;)]
 ]
 }
-</tw-passagedata><tw-passagedata pid="47" name="deathss" tags="" position="5628,477" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="47" name="deathss" tags="" position="5614,485" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 Oh no the guards have heard you dashing to the stairs,They begin chasing you as you run upstairs,You attempt to find a window to escape but they&#39;re all locked.
 The guards catch up to you and restrain you
 [[next|end1]]
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="48" name="waitas" tags="" position="5686,686" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="48" name="waitas" tags="" position="5683,693" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 As you wait you hear Mr.Stewart.&quot;Let&#39;s have a glass of wine in the library Marge&quot;
 You now have the oppurtunity to go upstairs.
 As you go upstairs carefully you arrive at a corner before the guarded room with your family.
@@ -451,7 +453,7 @@ You attack the guard and manage to knock him out, you try to jam open the door a
 You hear footsteps coming upstairs.
 The guards have heard you,there are two guards rushing you and you have no choice but to fight
 &lt;/div&gt;
-{(live: 7s)[
+{(live: 8s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;end1&quot;)]
 ]
@@ -463,7 +465,9 @@ You know you&#39;ve left your family and that they will be punished as a result.
 You try to justify to yourself that you had no other option
 But deep down you know that if you had more patience that things might have worked out differently.
 You have escaped by yourself,Congratulations
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="end1" tags="" position="6182,110" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="end1" tags="" position="6182,110" size="100,100">(set: $health=100)
+&lt;span class=&quot;health&quot;&gt;[Health:(print: $health)]&lt;/span&gt;
+&lt;div class=&quot;textBox&quot;&gt;
 Mr.Stewart:&quot;Jackson I&#39;m disspointed in you,I thought you were beginning to understand this farm.
 You were doing so well, I have to applaud you though, you&#39;ve gotten further than most. Ironically you would have escaped too if you had just left your beautiful wife and son to me.
 Kill him boys&quot;
@@ -517,12 +521,12 @@ So in the basement there&#39;s a window that&#39;s weak,there&#39;s only one bar
 ]
 }
 
-</tw-passagedata><tw-passagedata pid="58" name="lkkj" tags="" position="3565,146" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="58" name="lkkj" tags="" position="3517,197" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 Jereimah:&quot;Okay,okay We&#39;ll let you in on the plan.
 So in the basement there&#39;s a window that&#39;s weak,there&#39;s only one bar left because the other&#39;s were damaged a couple months back.
 We figure we can gradually break our chains using a tool and eventually escape through that window.&quot;
 &lt;/div&gt;
-{(live: 8s)[
+{(live: 9s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;ggg&quot;)]
 ]
@@ -548,10 +552,10 @@ Jeremiah:&quot;Next time they pick people to sharpen the tools,you gotta get us 
 ]
 }
 
-</tw-passagedata><tw-passagedata pid="61" name="ok" tags="" position="3954,295" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="61" name="ok" tags="" position="3908,368" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 A couple of days past and the day arrives.The guards arrive and start picking their usual workers to go the shed.
 &lt;/div&gt;
-{(live: 4s)[
+{(live: 7s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;kkl&quot;)]
 ]
@@ -562,7 +566,7 @@ You&#39;re taken to the shed and told to go to your station.
 The guards are not watching ye work and stand outside the shed talking.
 You begin work and keep an eye for useful tools
 &lt;/div&gt;
-{(live: 6s)[
+{(live: 8s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;my&quot;)]
 ]
@@ -577,7 +581,7 @@ Later that night the Nolans ask you did you get it
 Sam:&quot;Aw no!okay we&#39;ll try again next weeek&quot;
 You infact do have the chisel and know it&#39;s too risky to involve them.
 &lt;/div&gt;
-{(live: 5s)[
+{(live: 8s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;hy&quot;)]
 ]
@@ -588,7 +592,7 @@ Sam:&quot;Great give it here&quot;
 Jackson:&quot;Sorry boys but I can&#39;t trust ye, I&#39;ll break my chain first and then give it to you&quot;
 Jeremiah:&quot;Ya I wouldn&#39;t trust us either&quot;
 &lt;/div&gt;
-{(live: 6s)[
+{(live: 8s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;ast&quot;)]
 ]
@@ -597,7 +601,7 @@ Jeremiah:&quot;Ya I wouldn&#39;t trust us either&quot;
 Sam:&quot;Well we didn&#39;t have things planned out well them times.We&#39;ve got a solid plan this time.&quot;
 Jeremiah:&quot;Next time they pick people to sharpen the tools,you gotta get us a tool or weapon or your out!&quot;
 &lt;/div&gt;
-{(live: 7s)[
+{(live: 9s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;okh&quot;)]
 ]
@@ -609,7 +613,7 @@ You ask one of the guards and they tell you he was sick and in the infirmary.
 The Nolan brother&#39;s must have done something to him!
 They can&#39;t be trusted
 &lt;/div&gt;
-{(live: 8s)[
+{(live: 10s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;ok&quot;)]
 ]
@@ -636,9 +640,9 @@ Jeremiah:&quot;Thanks Jackson, we&#39;ll handle it from here and break the windo
 We&#39;ll let you know when we&#39;re ready to go ahead with the plan.
 Jackson:&quot;What about my family&quot;
 Sam:&quot;They&#39;re a liability, we&#39;re not helping you break into the house and save them.  You got a choice to make when we escape.
-[[I&#39;ll go with ye|hj]]
-[[I have to save them|jh]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="71" name="hj" tags="" position="4863,280" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+[[I&#39;ll go with ye|hjj]]
+[[I have to save them|jhh]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="71" name="hjj" tags="" position="4863,280" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 A couple of days later the Nolan&#39;s inform you that they have also been able to chisel their chains and can now break free also.
 Sam:&quot;We&#39;re getting out of here tonight&quot;
 &lt;/div&gt;
@@ -647,7 +651,7 @@ Sam:&quot;We&#39;re getting out of here tonight&quot;
 (if: $timeLeft &lt;= 0)[(goto:&quot;gta&quot;)]
 ]
 }
-</tw-passagedata><tw-passagedata pid="72" name="jh" tags="" position="4864,76" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="72" name="jhh" tags="" position="4864,76" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 Jeremiah:Okay I can respect that
 &lt;/div&gt;
 {(live: 4s)[
@@ -659,7 +663,7 @@ Jeremiah:Okay I can respect that
 A couple of days later the Nolan&#39;s inform you that they have also been able to chisel their chains and can now break free also.
 Sam:&quot;We&#39;re getting out of here tonight&quot;
 &lt;/div&gt;
-{(live: 6s)[
+{(live: 8s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;plan A&quot;)]
 ]
@@ -689,11 +693,11 @@ Jackson:&quot;No way I&#39;m not doing it,C&#39;mon let&#39;s go&quot;
 (if: $timeLeft &lt;= 0)[(goto:&quot;dsfn&quot;)]
 ]
 }
-</tw-passagedata><tw-passagedata pid="77" name="dsfn" tags="" position="5357,193" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+</tw-passagedata><tw-passagedata pid="77" name="dsfn" tags="" position="5336,210" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 Sam:&quot;No, we need you for the support,You may even get to break your Wife and Kid out if all goes to plan.&quot;
-[[Don&#39;t go with them and run|nrs]]
+[[Don&#39;t go with them and run|nrss]]
 [[Follow their plan|Ok]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="78" name="nrs" tags="" position="5176,379" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="78" name="nrss" tags="" position="5176,379" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 Jackson:&quot;Sorry boys I can&#39;t help you&quot;
 And so you run knowing they can&#39;t do anything because ye have to stay quiet
 Sam:&quot;You&#39;re a coward&quot;
@@ -709,7 +713,7 @@ Ye wait around the house and look around to see what secuirity is like
 Sam:&quot;Last time we tried this Jerry, we should have taken the back door&quot;
 Jeremiah:&quot;Ya i think your right let&#39;s go&quot;
 &lt;/div&gt;
-{(live: 7s)[
+{(live: 8s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;door&quot;)]
 ]
@@ -736,13 +740,13 @@ Just as you arrive at the end of the table,more armed guards rush into the room 
 </tw-passagedata><tw-passagedata pid="82" name="famile" tags="" position="5646,328" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 As you go upstairs carefully you arrive at a corner before the guarded room with your family in it.
 You can [[Rush the guard|rushem]] or [[Escape for yourself|escapes]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="83" name="z" tags="" position="5842,260" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="83" name="z" tags="" position="5918,332" size="100,100">&lt;div class=&quot;textBox&quot;&gt;
 They shoot Jeremiah as he is the closest to Mr.Stewart.
 You look behind you and realise the guard has also stabbed Sam
 Mr.Stewart:&quot;Oh no boys, why did ye have to try and escape again.I was so fair to ye. Wow Jackson I&#39;m impressed.It only took you a couple of weeks to try and escape.
 But why did you follow these idiots? You could be 10 miles away before we&#39;d notice you were gone in the morning.&quot;
 &lt;/div&gt;
-{(live: 10s)[
+{(live: 11s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;gga&quot;)]
 ]
@@ -771,7 +775,7 @@ You use Jeremiah and Sam as a decoy.
 You Jam open a door that you believe contains your family inside, based on what Jim has told you.
 You break open the door and see Maria and Alex.
 &lt;/div&gt;
-{(live: 4s)[
+{(live: 11s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;end22&quot;)]
 ]
@@ -784,7 +788,7 @@ Jackson:&quot;Shh I can&#39;t explain lets get out of here.
 You break open the window with the chisel and help Alex and Maria down first.
 You hear the men fighting downstairs but don&#39;t know who&#39;s winning the fight or what&#39;s happening.
 &lt;/div&gt;
-{(live: 10s)[
+{(live: 12s)[
 (set: $timeLeft to $timeLeft - 1) 
 (if: $timeLeft &lt;= 0)[(goto:&quot;happy&quot;)]
 ]
@@ -819,4 +823,3 @@ style:function(){return(e(this).attr("style")||"")+n}}),t},[String])}),define("i
 
 </body>
 </html>
-
